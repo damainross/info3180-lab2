@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+<link rel="stylesheet" href="{{ url_for('static', filename='app.css') }}" type="text/css" />
+{% block main %}
+    <div id= 'div' >
+        <img src="{{ url_for('static', filename='suit.jpg')}}"/>
+        <h1>The Don</h1>
+        <h5>@thedon</h5>
+        <h5>Kingston,Jamaica</h5>
+        <h5>Joined  {{time}}</h5>
+        <p>A student of this university, I love web development, and if it be the Lord's will I will build a cutting edge web application with what i've learned from this course.</p>
+        
+    </div>  
+{% endblock %}.
