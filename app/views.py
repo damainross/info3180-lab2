@@ -12,19 +12,18 @@ import datetime
 ###
 # Routing for your application.
 ###
-#@app.route('/profile') 
+ 
     
 def format_date_joined():
     now = datetime.datetime.now() 
-    ## today's date 
-    date_joined = datetime.date(2019, 2, 7)
-    # a specific date 
-    ## Format the date to return only month and year date 
-    print ("Joined "  + date_joined.strftime("%B, %Y"))
-    
-@app.route('/profile')    
+     
+    #date_joined = datetime.date(2019, 2, 7)
+   
+    return  now.strftime("%B, %Y")
+   
+@app.route('/profile/')    
 def profile():
-    render_template('profile.html',date='format_date_joined()')
+    return render_template('profile.html',date=format_date_joined())
 
 @app.route('/')
 def home():

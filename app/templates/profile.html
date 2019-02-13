@@ -1,13 +1,49 @@
 {% extends "base.html" %}
-<link rel="stylesheet" href="{{ url_for('static', filename='app.css') }}" type="text/css" />
 {% block main %}
+<link rel="stylesheet" href="{{ url_for('static', filename='app.css') }}" type="text/css" />
+
     <div id= 'div' >
+        <br>
+        <br>
+        <br>
         <img src="{{ url_for('static', filename='suit.jpg')}}"/>
+
         <h1>The Don</h1>
         <h5>@thedon</h5>
         <h5>Kingston,Jamaica</h5>
-        <h5>Joined  {{time}}</h5>
+        <h5>Joined  {{date}}</h5>
         <p>A student of this university, I love web development, and if it be the Lord's will I will build a cutting edge web application with what i've learned from this course.</p>
         
-    </div>  
+    </div>
+    <div id='table'>
+        
+        <table>
+            <tbody>
+            <tr>
+                <td align='center'>100</td>
+                <td></td>
+                
+            <td align='center'>200</td>
+            
+            <td></td>
+        
+            <td align='center'>
+                500
+            </td
+            <td></td>
+            
+        </tr>
+        <tr >
+             <td>Posts</td>
+            <td></td>
+            <td>Following</td>
+            <td></td>
+            <td>Followers</td>
+            
+        </tr>
+        </tbody>
+        </table>
+    </div>
+    
+    <button id ='button'>Follow</button>
 {% endblock %}.

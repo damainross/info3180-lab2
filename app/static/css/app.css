@@ -8,8 +8,28 @@ body > div > p{
 div > img{
     
   display: block;
+  margin-top: 100;
   margin-left: auto;
   margin-right: auto;
-  width: 40%;
+  width:50%;
   border-radius: 50%;
+  justify-content:center;
+}
+body > div {
+    background-color: red;
+}
+#table{
+    alignment-baseline: central;
+}
+
+#button{
+    color:blue;
+  
+   margin-left: 50%;
+   margin-right: 50%;
+}
+#div{
+    background-color: rgb(20,20,20);
+    justify-content:center;
+    text-align: center;
 }
